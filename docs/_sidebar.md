@@ -12,6 +12,10 @@
 
 - 计算机网络 
   
+- 英语
+  - [每日一句](English/OneSentencePerDay.md)
+
+
 - C++_BasicKnowledge
   - [基础知识](C++_BasicKnowledge/Chapter_One.md)
   

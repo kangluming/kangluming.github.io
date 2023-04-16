@@ -1,8 +1,15 @@
-# 命名空间的using声明
-
-
-  我们现在的库函数基本都是属于命名空间std的范围，在编程中经常会看到，并且在main函数中会有(using namespace std)
+# 命名空间
 
 
 
-  e.src = "https://commento.mydomain.org/js/commento.js", a.appendTo(a.body, e);
+
+### 命名空间的using声明
+我们现在的库函数基本都是属于命名空间std的范围，在编程中经常会看到，并且在main函数中会有(using namespace std)
+### 头文件不应包含using声明
+>位于头文件的代码（.h文件），一般情况不应使用using声明。因为头文件的内容会拷贝所有引用到它的文件中去，如果头文件里有某个using声明，那么每个使用了该头文件的文件就都会用这个声明。对于某些程序来说，由于不经意间包含了一些名字，反而可能产生始料未及的“名字冲突”。
+>一般来说我们只在main函数中使用using namespace std
+
+
+
+### 预处理器
+> 挖坑
