@@ -7,12 +7,13 @@
 - 计算机组成原理
 
 - 操作系统
-  - [第一章](OperatingSystem/Capter_One.md)
+  - [第一章](OperatingSystem/Chapter_One.md)
 
 
 - 计算机网络 
   
-- C++
+- C++_BasicKnowledge
+  - [基础知识](C++_BasicKnowledge/Chapter_One.md)
   
 - Leetcode
   - [cpp](/Leetcode/Leetcode_CPP.md)
