@@ -18,6 +18,7 @@
 
 - C++_BasicKnowledge
   - [基础知识](C++_BasicKnowledge/Chapter_One.md)
+  - [emplace](C++_BasicKnowledge/emplace.md)
   
 - Leetcode
   - [cpp](/Leetcode/Leetcode_CPP.md)
