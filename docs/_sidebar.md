@@ -15,10 +15,12 @@
 - 英语
   - [每日一句](English/OneSentencePerDay.md)
 
+- Apue
+  - [Apue](APUE/Chapter_One.md)
 
 - C++_BasicKnowledge
   - [基础知识](C++_BasicKnowledge/Chapter_One.md)
   - [emplace](C++_BasicKnowledge/emplace.md)
   
 - Leetcode
-  - [cpp](/Leetcode/Leetcode_CPP.md)
+  - [c++解法](/Leetcode/Leetcode_CPP.md)
