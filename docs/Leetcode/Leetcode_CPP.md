@@ -29,7 +29,7 @@
 -109 <= nums[i] <= 109
 -109 <= target <= 109
 只会存在一个有效答案
-```C++
+```Cpp
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -146,17 +146,18 @@ IL 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 �
 ## 这解法属实有点伞兵
 ## 方法一 暴力解（类似C语言）
 ```C++
+
 class Solution {
 public:
     int romanToInt(string s) {
         int count = s.size();
         int sum=0;
-        for(int i=0;i<count;i++){
-            if(s[i]=='I'){
-                if(s[i+1]=='X'){
+        for(int i = 0; i < count; i++){
+            if(s[i] == 'I'){
+                if(s[i+1] == 'X'){
                     sum=sum-2;
                 }
-                else if(s[i+1]=='V'){
+                else if(s[i+1] == 'V'){
                     sum=sum-2;
                 }
                 sum=sum+1;

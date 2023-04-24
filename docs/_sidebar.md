@@ -16,7 +16,9 @@
   - [每日一句](English/OneSentencePerDay.md)
 
 - Apue
-  - [Apue](APUE/Chapter_One.md)
+  - [第一章 UNIX基础知识](APUE/Chapter_One.md)
+  - [第二章 UNIX标准及实现](APUE/Chapter_Two.md)
+  - [第三章 文件I/O](APUE/Chapter_Three.md) 
 
 - C++_BasicKnowledge
   - [基础知识](C++_BasicKnowledge/Chapter_One.md)
