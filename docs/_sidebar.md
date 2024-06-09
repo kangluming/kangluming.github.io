@@ -25,7 +25,11 @@
   - [emplace](C++_BasicKnowledge/emplace.md)
   
 - Leetcode
-  - [c++解法](/Leetcode/Leetcode_CPP.md)
+  - [c++解法](Leetcode/Leetcode_CPP.md)
 
 - Linux_Kernel
-  - [第一章](/Linux_Kernel/Chapter_One.md)
+  - [第一章](Linux_Kernel/Chapter_One.md)
+
+- QT教程
+  - [第一章 QT基本介绍及安装](QT/Chapter_One.md)
+  - [第二章 QT基础功能](QT/Chapter_Two.md)
