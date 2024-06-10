@@ -45,11 +45,47 @@ QT实现内存的自动回收需要满足以下两个条件：
 
 ```
 
-# 字符串类型
-
 # log输出
 
+qDebug类
+产生的exe也想执行输出日志，需要在.pro文件 CONFIG += c++11 console 增加conslole
+
+# 字符串类型
+
+```C++
+c   => char*
+c++ => std::string
+Qt  => QByteArray, QString
+```
+
+## QByteArray
+
++ 构造函数
+
+```
+// 构造空对象, 里边没有数据
+QByteArray::QByteArray();
+// 将data中的size个字符进行构造, 得到一个字节数组对象
+// 如果 size==-1 函数内部自动计算字符串长度, 计算方式为: strlen(data)
+QByteArray::QByteArray(const char *data, int size = -1);
+// 构造一个长度为size个字节, 并且每个字节值都为ch的字节数组
+QByteArray::QByteArray(int size, char ch);
+
+```
+
++ 数据操作
+
+```
+
+```
+
+
 # QVariant
+
++ QVariant这个类很神奇，或者说方便。很多时候，需要几种不同的数据类型需要传递，如果用结构体，又不大方便，容器保存的也只是一种数据类型，而QVariant则可以统统搞定。
++ QVariant 这个类型充当着最常见的数据类型的联合。QVariant 可以保存很多Qt的数据类型，包括QBrush、QColor、QCursor、QDateTime、QFont、QKeySequence、 QPalette、QPen、QPixmap、QPoint、QRect、QRegion、QSize和QString，并且还有C++基本类型，如 int、float等。
+
+
 
 # 位置和尺寸
 
