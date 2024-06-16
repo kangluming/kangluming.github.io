@@ -21,17 +21,14 @@ get_allocator
  
 返回关联的分配器
 #### 迭代器Iterators
-begin
-cbegin(C++11)
-end
-cend(C++11)
-rbegin
-crbegin(C++11)
-rend
-crend(C++11)
+
+| 函数名 | 功能 |
+| - | - |
+| begin cbegin(C++11)| |
+| end cend(C++11) | |
+| rbegin crbegin(C++11) | |
+| rend crend(C++11) | |
  
-返回指向末尾的逆向迭代器
-(公开成员函数)
 #### 容量Capacity
 | 函数名 | 功能 |
 | - | - |
@@ -69,7 +66,39 @@ crend(C++11)
 | key_comp | 返回用于比较键的函数 |
 | value_comp | 返回用于比较 value_type 类型的对象中的键的函数 |
 
+#### 代码示例
+
+```C++
+
+```
+
 ### std::map
+
+#### 成员函数Member functions
+
+#### 元素访问
+
+| 函数名 | 功能 |
+| - | - |
+| at | access specified element with bounds checking (public member function)|
+| operator[] | access or insert specified element (public member function)|
+
+#### 迭代器Iterators
+
+| 函数名 | 功能 |
+| - | - |
+| begin cbegin(C++11)| returns an iterator to the beginning |
+| end cend(C++11) | returns an iterator to the end |
+| rbegin crbegin(C++11) | returns a reverse iterator to the beginning |
+| rend crend(C++11) | returns a reverse iterator to the end |
+
+#### 容量Capacity
+
+| 函数名 | 功能 |
+| - | - |
+| empty | checks whether the container is empty |
+| size | returns the number of elements |
+| max_size | returns the maximum possible number of elements |
 
 ### std::multiset
 
