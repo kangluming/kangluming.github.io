@@ -89,4 +89,7 @@ QByteArray::QByteArray(int size, char ch);
 
 # 位置和尺寸
 
+QPoint
+
+
 # 日期和时间
