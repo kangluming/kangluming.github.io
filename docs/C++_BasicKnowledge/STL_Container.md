@@ -28,14 +28,14 @@ get_allocator
 | end cend(C++11) | |
 | rbegin crbegin(C++11) | |
 | rend crend(C++11) | |
- 
+
 #### 容量Capacity
 | 函数名 | 功能 |
 | - | - |
 | empty | checks whether the container is empty |
 | size | 返回元素数 |
 | max_size | 返回可容纳的最大元素数 |
- 
+
 #### 修改器Modifiers
 | 函数名 | 功能 |
 | - | - |
@@ -69,6 +69,84 @@ get_allocator
 #### 代码示例
 
 ```C++
+
+```
+
+### multiset
+
+
+#### 代码示例
+
+```C++
+
+#include <iostream>
+#include <set>
+#include <iterator>
+
+int main() {
+    // 创建一个空的 multiset
+    std::multiset<int> mset;
+
+    // 插入元素
+    mset.insert(3);
+    mset.insert(1);
+    mset.insert(4);
+    mset.insert(1);
+    mset.insert(5);
+    mset.insert(9);
+
+    // 输出 multiset 的内容
+    std::cout << "Elements in multiset: ";
+    for (auto it = mset.begin(); it != mset.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+    // Elements in multiset: 1 1 3 4 5 9 自动排序
+    
+    // 使用 count() 函数
+    std::cout << "Count of element '1': " << mset.count(1) << std::endl;
+    // Count of element '1': 2
+    
+    // 使用 find() 函数
+    auto findIt = mset.find(4);
+    if (findIt != mset.end()) {
+        std::cout << "Element '4' found." << std::endl;
+    }
+    // Element '4' found.
+
+    // 使用 lower_bound() 和 upper_bound() 函数
+    auto lower = mset.lower_bound(2);
+    auto upper = mset.upper_bound(5);
+    std::cout << "Elements between 2 and 5: ";
+    for (auto it = lower; it != upper; ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+    // Elements between 2 and 5: 3 4 5
+
+    // 使用 equal_range() 函数
+    auto range = mset.equal_range(1);
+    std::cout << "Range of element '1': ";
+    for (auto it = range.first; it != range.second; ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+
+    // 使用 erase() 函数
+    mset.erase(1);
+    std::cout << "Elements after erasing '1': ";
+    for (auto it = mset.begin(); it != mset.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+
+    // 使用 clear() 函数
+    mset.clear();
+    std::cout << "Elements after clearing: " << mset.size() << std::endl;
+
+    return 0;
+}
+
 
 ```
 
